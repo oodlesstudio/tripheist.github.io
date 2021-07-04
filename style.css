@@ -1,0 +1,1211 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Section Title */
+.section-title h2{
+    font-size: 30px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 11px;
+}
+.border-small{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .section-title h2{
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+    .bdr-btm{
+        display: none;
+    }
+    .border-small{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Heist Button */
+.heist-button{
+    text-align: center;
+}
+
+.heist-button .btn-info{
+    background: linear-gradient(297deg, #05828B, #13B4BF);
+    border: none;
+    color: #fff;
+    border-radius: 52px;
+    box-shadow: 8px 8px 16px #05828B4A;
+    padding: 23px 21px;
+    border: 4px solid #fff;
+}
+
+/* Content Area */
+.content-area{
+    position: relative;
+}
+.content-area::before{
+    content: '\003C';
+    position: absolute;
+    background: #fff;
+    color: #000;
+    box-shadow: 0px 0px 6px #00000012;
+    border-radius: 100%;
+    padding: 10px 22px;
+    font-size: 25px;
+    top: 28%;
+    left: -2%;
+    z-index: 1;
+}
+.content-area::after{
+    content: '\003E';
+    position: absolute;
+    background: #fff;
+    color: #000;
+    box-shadow: 0px 0px 6px #00000012;
+    border-radius: 100%;
+    padding: 10px 22px;
+    font-size: 25px;
+    top: 28%;
+    right: -2%;
+    z-index: 1;
+}
+@media only screen and (max-width: 600px) {
+    .content-area::before{
+        display: none;
+    }
+    .content-area::after{
+        display: none;
+    }
+}
+
+
+/* Home Header */
+.home-header .container-fluid{
+    max-width: 1366px;
+    padding-left: 51px;
+    padding-right: 52px;
+    background: url(img/banner.png) top left no-repeat;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+}
+.heist-logo{
+    margin-top: 38px;
+}
+.heist-logo img{
+    max-width: 100%;
+    height: auto;
+}
+.social-icons{
+    width: 150px;
+    height: auto;
+    margin-top: 31px;
+    margin-right: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-icons a{
+    color: #fff;
+    font-size: 26px;
+}
+.home-header-left h1{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 800;
+    text-shadow: 0 1px 1px #00000029;
+    margin-left: 2px;
+    margin-top: 133px;
+}
+.home-header-left p{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 35px;
+    text-shadow: 0 1px 1px #00000029;
+    margin-left: 2px;
+}
+
+/* Home Header Right */
+.home-header-right ul{
+    margin-top: 31px;
+    float: right;
+}
+.home-header-right ul li{
+    list-style: none;
+    float: left;
+}
+.register, .heist-login{
+    margin-top: 16px;
+}
+.register a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #061A3A;
+}
+.heist-login a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    background: transparent linear-gradient(90deg, #05828B 0%, #13B4BF 100%) 0% 0% no-repeat padding-box;
+    border-radius: 33px;
+    padding: 14px 22px;
+    border: 2px solid #fff;
+    box-shadow: 8px 8px 16px #05828B4A;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+.options-bar{
+    background: linear-gradient(90deg, #05828B, #13B4BF);
+    border-radius: 33px;
+    border: 2px solid #fff;
+    box-shadow: 8px 8px 16px #05828B4A;
+}
+.options-bar img{
+    padding: 15px;
+}
+.home-header-right h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #061A3A;
+    margin-top: 117px;
+    margin-bottom: 30px;
+}
+.services{
+    display: flex;
+    justify-content: center;
+}
+.services a{
+    text-decoration: none;
+}
+.flights, .cabs, .activities{
+    background: transparent linear-gradient(321deg, #FFFFFF 0%, #CFD7E4 100%, #000000 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 8px 8px 16px #00000047;
+    border-radius: 8px;
+}
+.flights a, .cabs a, .activities a{
+    color: #222222;
+}
+.flights{
+    padding: 20px 24px;
+}
+.flights p{
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+.hotels{
+    padding: 16px 24px;
+}
+.cabs{
+    padding: 18px 32px;
+    margin-right: 20px;
+}
+.hotels p, .cabs p, .activities p{
+    padding-top: 12px;
+    margin-bottom: 0;
+}
+.activities{
+    padding: 18px 15px;
+}
+.services .active{
+    background: transparent linear-gradient(90deg, #05828B 0%, #13B4BF 100%) 0% 0% no-repeat padding-box;   
+    border-radius: 8px;
+    box-shadow: 8px 8px 16px #05828B4A;
+    border: 2px solid #fff;
+    margin: 0 20px;
+}
+.services .active a{
+    color: #fff;
+}
+.flights:hover, .hotels:hover, .cabs:hover, .activities:hover{
+    cursor: pointer;
+}
+.location-city{
+    display: flex;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.location, .city{
+    border: 1px solid #0000001A;
+    border-radius: 8px;
+    display: flex;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.location{
+    margin-right: 10px;
+}
+.check-in-out, .guest{
+    border: 1px solid #0000001A;
+    border-radius: 8px;
+    display: flex;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
+.location img, .check-in-out img{
+    padding: 25px 16px 25px 20px;
+}
+.city img{
+    padding: 26px 18px 31px 25px;
+}
+.guest img{
+    padding: 26px 16px 16px 20px;
+}
+.location label, .city label, .check-in-out label, .guest label{
+    font-size: 14px;
+    color: #7B8497;
+    float: left;
+    padding-top: 17px;
+    padding-bottom: 9px;
+}
+.location select, .city select{
+    color: #5C5C5C;
+    font-weight: 500;
+    padding: 0;
+    padding-right: 36px;
+    border: none;
+}
+.location select:focus, .city select:focus{
+    outline: none;
+    border: none;
+}
+.check-in-out p, .guest p{
+    margin-bottom: 0;
+    color: #5C5C5C;
+    font-weight: 500;
+}
+.guest p{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.check-in-out{
+    margin-bottom: 10px;
+}
+.home-header-right button{
+    background: transparent linear-gradient(90deg, #05828B 0%, #13B4BF 100%) 0% 0% no-repeat padding-box;
+    border-radius: 33px;
+    padding: 20px 100px;
+    border: none;
+    margin-top: 29px;
+}
+.home-header-right button:focus{
+    box-shadow: none;
+}
+.fa-search{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .home-header .container-fluid{
+        padding-left: 0px;
+        padding-right: 0px;
+        background: none;
+    }
+    .social-media{
+        background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+    }
+    .social-media .bg-dark{
+        background-color: transparent !important;
+        padding: 26px 19px;
+    } 
+    .navbar-dark .navbar-toggler {
+        color: #fff;
+        border: none;
+    }
+    .navbar-toggler-icon{
+        width: 22px;
+        height: 18px;
+    }
+    .heist-logo{
+        margin: 9px;
+    }
+    .heist-logo img{
+        width: 56%;
+        height: auto;
+        margin-left: 20%;
+    }
+    .header-plane{
+        color: #fff;
+        transform: rotate(225deg);
+        font-size: 30px;
+        margin-bottom: 17px;
+        margin-right: 40px;
+    }
+    .social-icons,
+    .home-header-left h1,
+    .home-header-left p,
+    .home-header-right ul,
+    .home-header-right h2{
+        display: none;
+    }
+    .home-header .home-header-right{
+        padding-left: 28px !important;
+        padding-right: 28px !important;
+    }
+    .services{
+        margin-top: 28px;
+        margin-bottom: 37px;
+    }
+    .flights{
+        padding: 13px 19px 14px 16px;
+        box-shadow: 0px 0px 32px #0000001A;
+    }
+    .flights p,
+    .hotels p,
+    .cabs p,
+    .activities{
+        font-size: 9px;
+        padding-top: 8px;
+    }
+    .hotels{
+        padding: 12px 20px 13px 17px;
+    }
+    .cabs{
+        padding: 12px 23px 13px 21px;
+        margin-right: 13px;
+        box-shadow: 0px 0px 32px #0000001A;
+    }
+    .activities{
+        padding: 14px 12px 13px 13px;
+        box-shadow: 0px 0px 32px #0000001A;
+    }
+    .flights img{
+        width: 61%;
+        height: auto;
+    }
+    .hotels img,
+    .cabs img{
+        width: 65%;
+        height: auto;
+    }
+    .activities img{
+        width: 40%;
+        height: auto;
+    }
+    .services .active{
+        background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+        box-shadow: none;
+        border: none;
+        margin: 0 13px;
+    }
+    .location-city-small{
+        display: flex;
+    }
+    .location-small,
+    .city-small{
+        width: 50%;
+    }
+    .location-small a{
+        background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+        padding: 13px 14px 11px 13px;
+    }
+    .city-small a{
+        color: #149698;
+        font-size: 12px;
+        text-decoration: none;
+        padding: 13px 27px 11px 28px;
+        border: 1px solid #149698;
+        border-radius: 8px;
+    }
+    .location{
+        width: 100%;
+        margin-right: 0;
+    }
+    .city{
+        display: none;
+    }
+    .home-header-right button{
+        background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+        padding: 16px 107px;
+        margin-top: 28px;
+    }
+    .fa-search{
+        display: inline-block;
+        margin-right: 14px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .pos-f-t{
+        display: none;
+    }
+    .header-plane{
+        display: none;
+    }
+    .location-city-small{
+        display: none;
+    }
+}
+
+
+/* Guides */
+.guides{
+    margin-top: 37px;
+}
+.guides .container{
+    padding-left: 85px;
+    padding-right: 85px;
+}
+.guides-main{
+    border-radius: 8px;
+    box-shadow: 0px 0px 64px #0000000D;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 31px;
+}
+.guides-info{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.guides-info img{
+    margin-right: 20px;
+}
+.guides-info h5{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 9px;
+    margin-bottom: 12px;
+}
+.guides-info p{
+    color: #7B8497;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .guides{
+        margin-top: 47px;
+    }
+    .guides .container{
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    .guides-main{
+        border-radius: 0;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .guides-info{
+        display: flex;
+        margin-top: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    .guides-info img{
+        margin-right: 0;
+    }
+    .guides-info h5{
+        font-size: 14px;
+        font-weight: 700;
+        color: #000000;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .guides-info p{
+        color: #7B8497;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 29px;
+    }
+}
+
+
+/* Destinations */
+.destinations .section-title h2{
+    color: #061A3A;
+}
+.destinations .section-title{
+    margin-top: 43px;
+    margin-bottom: 21px;
+}
+.destinations img{
+    max-width: 100%;
+    height: auto;
+}
+.destinations h4{
+    color: #061A3A;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.destinations p{
+    letter-spacing: 0.32px;
+    color: #7B8497;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .destinations .section-title{
+        margin-top: 7px;
+        margin-bottom: 24px;
+    }
+    .destinations h4{
+        margin-top: 10px;
+        margin-bottom: 7px;
+        text-align: left;
+        font-size: 14px;
+    }
+    .destinations p{
+        font-size: 11px;
+        letter-spacing: 0.22px;
+        color: #7B8497;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+}
+
+
+/* Recommendations */
+.recommendations .section-title{
+    margin-top: 40px;
+    margin-bottom: 21px;
+}
+.recommendations img{
+    max-width: 100%;
+    height: auto;
+}
+.recommendations .fa-heart{
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    color: #fff;
+    font-size: 24px;
+}
+.recommend-1 .discount-img{
+    position: absolute;
+    bottom: 1px;
+    right: 2px;
+}
+.recommend-2 .discount-img{
+    position: absolute;
+    bottom: 0;
+    right: 1px;
+}
+.recommend-3 .discount-img{
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+}
+.los-angeles{
+    box-shadow: 0px 0px 6px #0000000D;
+    padding: 21px 18px 23px 24px;
+}
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
+.reviews h5{
+    font-weight: 400;
+    font-size: 14px;
+    color: #131313;
+    margin-bottom: 0;
+}
+.reviews p{
+    font-size: 12px;
+    color: #131313;
+    margin-bottom: 0;
+}
+.recommendations h4{
+    font-size: 18px;
+    color: #131313;
+    margin: 10px 0;
+    margin-bottom: 0;
+    padding-bottom: 17px;
+}
+.discount{
+    display: flex;
+    justify-content: space-between;
+}
+.point{
+    background: #061A3A;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 6px;
+    padding-left: 7px;
+    margin-right: 7px;
+}
+.discount h6{
+    font-size: 12px;
+    color: #131313;
+}
+.discount p{
+    margin-bottom: 3px;
+    font-size: 12px;
+    color: #7B8497;
+    text-align: right;
+}
+.dollar{
+    text-decoration: line-through;
+}
+.discount h4{
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    margin: 0;
+}
+.discount h4 img{
+    padding-right: 9px;
+}
+
+@media only screen and (max-width: 600px) {
+    .recommendations .section-title{
+        margin-top: 20px;
+        margin-bottom: 23px;
+    }
+    .recommendations .fa-heart,
+    .recommend-1 .discount-img,
+    .recommend-2 .discount-img,
+    .recommend-3 .discount-img {
+        display: none;
+    }
+    .los-angeles{
+        box-shadow: none;
+        padding: 0;
+    }
+    .recommendations img{
+        margin-bottom: 10px;
+    }
+    .reviews h5,
+    .reviews p,
+    .discount h6,
+    .discount p{
+        font-size: 10px;
+        color: #7B8497;
+    }
+    .recommendations h4{
+        font-size: 14px;
+        margin: 0;
+        padding-top: 4px;
+        margin-bottom: 11px;
+    }
+    .point{
+        background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+        font-size: 8px;
+        border-radius: 2px;
+        padding: 5px;
+    }
+    .discount p{
+        margin: 0;
+    }
+    .discount h4{
+        font-size: 13px;
+        margin-top: 2px;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    .discount h4 img{
+        padding-right: 2px;
+        margin-bottom: 0;
+        width: 10px;
+    }
+}
+
+
+/* Experiences */
+.experiences .section-title{
+    margin-top: 40px;
+    margin-bottom: 2px;
+}
+
+.places-left img, .places-right img{
+    max-width: 100%;
+    height: auto;
+}
+.agra, .rishikesh, .mumbai, .jaipur{
+    width: 50%;
+    float: left;
+    position: relative;
+    text-align: center;
+    padding: 8px;
+}
+.nanital, .delhi{
+    width: 100%;
+    float: left;
+    position: relative;
+    text-align: center;
+    padding: 8px;
+}
+.rishikesh, .jaipur{
+    padding-right: 0;
+}
+.nanital, .delhi{
+    padding-right: 0;
+    padding-left: 0;
+}
+.agra{
+    padding-left: 0;
+}
+.mumbai{
+    padding-left: 0;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0px 0px 6px #00000066;
+  }
+.bottom-right {
+    position: absolute;
+    bottom: 15px;
+    right: 23px;
+}
+.bottom-right span{
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 3px;
+    display: block;
+    text-align: end;
+}
+.bottom-right h5{
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.experiences h5 img{
+    padding-right: 9px;
+}
+.experiences .heist-button{
+    margin-top: 29px;
+}
+.experiences .heist-button .btn-info{
+    padding: 16px 26px;
+}
+.experiences .heist-button img{
+    padding-left: 16px;
+}
+@media only screen and (max-width: 600px) {
+    .experiences .section-title{
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
+    .centered {
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .bottom-right {
+        position: absolute;
+        bottom: 16px;
+        right: 17px;
+      }
+    .bottom-right span{
+        font-size: 8px;
+        padding-bottom: 1px;
+    }
+    .bottom-right h5{
+        font-size: 12px;
+    }
+    .experiences h5 img{
+        padding-right: 2px;
+        width: 10px;
+    }
+    .experiences .heist-button{
+        display: none;
+    }
+}
+
+/* Visit */
+.visit img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+@media only screen and (max-width: 600px) {
+    .visit{
+        display: none;
+    }
+}
+
+
+/* Getaways */
+.getaways .section-title{
+    margin-bottom: 29px;
+    margin-top: 40px;
+}
+
+.select-categories ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-left: 0;
+}
+.select-categories ul li{
+    list-style: none;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #D8D8D8;
+}
+.select-categories ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+}
+.select-categories .active, .select-categories ul li a:hover{
+    color: #078A93;
+    border-bottom: 4px solid #078A93;
+    padding-bottom: 13px;
+}
+.beaches{
+    padding: 0 31px;
+    padding-left: 0;
+}
+.deserts, .hills{
+    padding: 0 31px;
+}
+.monuments{
+    padding: 0 31px;
+    padding-right: 0;
+}
+.australia, .malibu, .africa, .thailand{
+    position: relative;
+    text-align: center;
+}
+.top-getaways img{
+    max-width: 100%;
+    height: auto;
+}
+.top-getaways h4{
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0px 0px 6px #00000066;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 600px) {
+    .getaways .section-title{
+        margin-top: 28px;
+        margin-bottom: 24px;
+    }
+    .select-categories{
+        padding: 0;
+    }
+    .select-categories ul{
+        margin-bottom: 20px;
+    }
+    .select-categories ul li a{
+        font-size: 12px;
+    }
+    .beaches{
+        padding: 0 12px;
+        padding-left: 0;
+    }
+    .deserts, .hills{
+        padding: 0 12px;
+    }
+    .monuments{
+        padding: 0 12px;
+        padding-right: 0;
+    }
+    .africa, .thailand{
+        margin-top: 16px;
+    }
+    .top-getaways h4{
+        font-size: 14px;
+    }
+}
+
+/* Blog */
+.blog .section-title{
+    margin-bottom: 22px;
+    margin-top: 53px;
+}
+.blog-content{
+    margin: 0 auto;
+}
+.blog img{
+    max-width: 100%;
+    height: auto;
+}
+.blog h5{
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    padding-top: 20px;
+    margin-bottom: 16px;
+}
+.blog p{
+    color: #7B8497;
+    margin-bottom: 20px;
+}
+.arrow-area{
+    display: flex;
+    justify-content: space-between;
+}
+.arrow-area p{
+    font-size: 14px;
+    margin-top: 1px;
+}
+.arrow-area span img{
+    background: #F3F3F3;
+    border-radius: 20px;
+    padding: 9px;
+}
+.blog .heist-button{
+    margin-top: 41px;
+}
+.blog .heist-button img{
+    padding-left: 16px;
+}
+@media only screen and (max-width: 600px) {
+    .blog .section-title{
+        margin-top: 36px;
+        margin-bottom: 24px;
+    }
+    .blog h5{
+        font-size: 14px;
+        padding-top: 14px;
+        margin-bottom: 6px;
+    }
+    .blog p{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    .arrow-area h6{
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    .arrow-area p{
+        font-size: 10px;
+        margin-bottom: 44px;
+    }
+    .arrow-area span img{
+        display: none;
+    }
+    .blog .heist-button{
+        margin-top: -15px;
+    }
+    .blog .heist-button .btn-info{
+        border: none;
+        font-size: 14px;
+        padding: 15px 84px;
+    }
+    .blog .heist-button img{
+        padding-left: 14px;
+    }
+}
+
+
+/* Deals */
+.deals{
+    background: linear-gradient(90deg, #05828B, #13B4BF);
+    color: #fff;
+    padding: 47px 0;
+    margin-top: 53px;
+}
+.newsletter img{
+    padding-right: 30px;
+}
+.newsletter h5{
+    font-size: 24px;
+    font-weight: 600;
+}
+.newsletter span{
+    font-weight: 400;
+}
+.newsletter .form-control::placeholder{
+    color: #5C5C5C;
+}
+.newsletter .form-control{
+    padding: 21px 173px 20px 26px;
+    margin-right: 10px;
+    margin-left: 37px;
+    border-color: #fff;
+}
+.newsletter input[type="email"]:focus{
+    box-shadow: none;
+}
+.newsletter .btn-danger{
+    background: #F55F5F;
+    border-color: #F55F5F;
+    font-weight: 600;
+    padding: 21px 32px 20px 33px;
+}
+@media only screen and (max-width: 600px) {
+    .deals{
+        display: none;
+    }
+}
+
+
+/* Countries */
+.countries{
+    margin-top: 75px;
+}
+.countries .section-title{
+    margin-bottom: 21px;
+}
+.countries img{
+    max-width: 100%;
+    height: auto;
+}
+.countries h4{
+    margin-top: 19px;
+    margin-bottom: 10px;
+    color: #061A3A;
+    font-size: 20px;
+}
+.countries span{
+    color: #7B8497;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+}
+.countries .heist-button{
+    margin-top: 53px;
+    margin-bottom: 51px;
+}
+.countries .heist-button .btn-info{
+    padding: 24px 22px 22px 22px;
+}
+.countries .heist-button img{
+    padding-left: 21px;
+}
+@media only screen and (max-width: 600px) {
+    .countries{
+        margin-top: 36px;
+    }
+    .countries .section-title{
+        margin-bottom: 24px;
+    }
+    .countries h4{
+        font-size: 14px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+    .countries span{
+        font-size: 12px;
+    }
+    .countries .dubai, .countries .singapore{
+        margin-top: 24px;
+    }
+    .countries .heist-button{
+        margin-top: 28px;
+        margin-bottom: 36px;
+    }
+    .countries .heist-button .btn-info{
+        border: none;
+        font-size: 14px;
+        padding: 15px 63px;
+    }
+    .countries .heist-button img{
+        padding-left: 9px;
+    }
+}
+
+
+/* Footer Info */
+.footer-info{
+    background: #FAFAFA;
+    border: 1px solid #ECECEC;
+}
+.footer-info h6{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+.footer-info ul{
+    padding-top: 51px;
+    padding-bottom: 66px;
+    padding-left: 0;
+}
+.footer-info ul li{
+    list-style: none;
+    padding-top: 20px;
+    color: #333333;
+    font-weight: 400;
+}
+.footer-info ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #333333;
+}
+.get-in-touch img{
+    padding-right: 15px;
+}
+.briefcase, .support-heist{
+    display: flex;
+}
+@media only screen and (max-width: 600px) {
+    .footer-info{
+        padding-top: 15px;
+        padding-bottom: 21px;
+        font-size: 14px;
+    }
+    .footer-contact{
+        display: none;
+    }
+    .footer-info ul{
+        padding: 15px 0;
+        margin-bottom: 0;
+    }
+    .footer-info ul li{
+        padding-top: 10px;
+    }
+    .footer-info h6{
+        margin-bottom: 6px;
+        font-size: 14px;
+    }
+    .briefcase{
+        margin-top: 3px;
+    }
+}
+
+
+/* Footer Main */
+.footer-main{
+    background: #000;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    border: 1px solid #E6E6E6;
+    padding-top: 23px;
+    padding-bottom: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .footer-main{
+        font-size: 10px;
+    }
+}
+
+
+.container{
+    padding: 0 116px;
+}
+@media only screen and (max-width: 600px) {
+    .footer-main{
+        font-size: 10px;
+    }
+    .container{
+        padding: 0 32px;
+    }
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+}
+

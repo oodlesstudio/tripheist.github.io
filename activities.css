@@ -1,0 +1,1034 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid{
+    max-width: 1366px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+}
+.header-top{
+    box-shadow: 0px 2px 6px #00000029;
+}
+.navbar{
+    padding: 0 12px;
+}
+.bg-light{
+    background: #fff !important;
+}
+.navbar-brand{
+    padding-top: 17px;
+    padding-bottom: 16px;
+}
+.navbar-brand img{
+    width: 89%;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #2A2A2A;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 29px 5px;
+    margin: 0 20px;
+}
+.navbar-light .navbar-nav .active{
+    color: #078A93 !important;
+    font-size: 16px;
+    border-bottom: 5px solid #078A93;;
+}
+.header-top ul li{
+    list-style: none;
+    float: left;
+}
+.register, .heist-login, .options-bar{
+    margin-top: 10px;
+}
+.register a{
+    font-weight: 600;
+    color: #061A3A;
+}
+.heist-login a{
+    font-weight: 600;
+    color: #fff;
+    background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    padding: 10px 23px 10px 25px;
+    border: 1px solid #fff;
+    box-shadow: 8px 8px 16px #05828B4A;
+    margin-left: 44px;
+    margin-right: 27px;
+}
+.options-bar a{
+    background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    border: 1px solid #fff;
+    box-shadow: 8px 8px 16px #05828B4A;
+    padding: 10px 13px;
+}
+.options-bar a img{
+    width: 14px;
+    height: auto;
+    margin-top: -1px;
+    margin-left: 1px;
+}
+@media only screen and (max-width: 600px) {
+    .header-top{
+        display: none;
+    }
+}
+
+/* Header Bottom */
+.header-bottom{
+    background: #05828B;
+    padding: 21px;
+}
+.header-filters{
+    display: flex;
+    justify-content: center;
+}
+.header-filters-inner{
+    width: 586px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px #C5C5C51A;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 16px 7px 28px;
+}
+.header-location img{
+    padding-right: 11px;
+}
+.header-date img, .header-time img{
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.header-date, .header-time{
+    border-left: 1px solid #CCCCCC;
+}
+.header-filters-inner span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2A2A2A;
+    padding-top: 15px;
+}
+.header-search span{
+    padding-top: 0;
+    background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    padding: 5px 8px;
+}
+.header-search .fa-search{
+    color: #fff;
+    font-size: 13px;
+}
+@media only screen and (max-width: 600px) {
+    .header-bottom{
+        display: none;
+    }
+}
+
+
+/* Activities */
+.activities{
+    margin-top: 170px;
+    background: #FCFCFC;
+    padding-bottom: 38px;
+}
+.activities-left{
+    width: 20.2%;
+    height: 602px;
+    background: #fff;
+    padding-top: 50px;
+}
+.price-range{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+.price-range img{
+    padding-right: 6px;
+    padding-bottom: 2px;
+}
+
+/* Activities Right */
+.activities-right{
+    width: calc(100% - 20.2%);
+    padding: 28px 36px 0 27px;
+}
+.breadcrumb{
+    margin-bottom: 14px;
+}
+.breadcrumb .breadcrumb-item{
+    font-size: 12px;
+}
+.breadcrumb .breadcrumb-item a{ 
+    color: #333333;
+}
+.breadcrumb .active{
+    color: #078A93;
+    font-weight: 500;
+}
+.activities-right h3{
+    font-size: 21px;
+    font-weight: 700;
+    color: #2A2A2A;
+    margin-bottom: 17px;
+}
+.activities-right .btn-group button{
+    background: #fff;
+    border: 1px solid #E3E3E3;
+    border-radius: 19px;
+    color: #333333;
+    font-size: 12px;
+    margin-bottom: 33px;
+}
+.activities-right .btn-group button:hover, .activities-right .btn-group button:focus{
+    background: #fff;
+    color: #333333;
+    border-color: #E3E3E3;
+    outline: none;
+    box-shadow: none;
+}
+.activities-right .dropdown-toggle::after {
+    display: none;
+}
+.activities-right .btn-group img{
+    width: 9px;
+    padding-bottom: 2px;
+    margin-right: 5px;
+}
+.activities-right .fa-chevron-down,
+.activities-right .fa-star{
+    color: #078A93;
+}
+.activities-right .fa-chevron-down{
+    margin-left: 10px;
+    padding-top: 2px;
+}
+.activities-right .fa-star{
+    margin-right: 5px;
+    padding-top: 1px;
+}
+
+/* Aquarium */
+.aquarium{
+    border: 1px solid #D6D6D6;
+    border-radius: 8px;
+    margin-bottom: 27px;
+    background: #FFFFFF;
+    flex-wrap: wrap;
+}
+.aqua-sm-img{
+    margin-right: 28px;
+    max-width: 100%;
+}
+.aquarium-box-2{
+    width: 40.1%;
+    padding-right: 18px;
+}
+.aquarium-box-2 h4{
+    font-size: 17px;
+    font-weight: 600;
+    color: #333333;
+    margin-top: 18px;
+    margin-bottom: 14px;
+}
+.aquarium p{
+    margin-bottom: 0;
+}
+.aquarium-p{
+    color: #A2A2A2;
+    font-size: 15px;
+}
+.aquarium-offer{
+    border-right: 1px solid #D6D6D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aquarium-offer-inner{
+    border-left: 1px dashed #D6D6D6;
+    padding: 13px 38px 15px 36px;
+}
+.best-offer{
+    color: #B81A52;
+    font-size: 12px;
+    padding-bottom: 8px;
+}
+.off200{
+    color: #1860CB;
+    font-size: 12px;
+    padding-bottom: 7px;
+}
+.off200 strong{
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    display: block;
+}
+.code20{
+    background: #FEB627;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 2px;
+    padding: 5px 20px 6px 17px;
+}
+.check-availability{
+    text-align: end;
+}
+.check-availability h5{
+    color: #1A2FB8;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 30px;
+    margin-right: 34px;
+}
+.check-availability h6{
+    color: #B7B7B7;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-decoration: line-through;
+    margin-right: 34px;
+    text-decoration-color: #05828B;
+}
+.availability a{
+    background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    box-shadow: 8px 8px 16px #05828B4A;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 9px 15px 8px 15px;
+    margin: 0 23px;
+}
+.aquarium .collapse{
+    border-top: 1px solid #D6D6D6;
+    padding-bottom: 21px;
+}
+.collapsing{
+    transition-duration: 0s;
+}
+.collapse-left{
+    margin-left: 16px;
+    margin-top: 23px;
+}
+.collapse-left p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+.collapse-left label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}
+.collapse-left .form-check-inline{
+    margin-right: 60px;
+}
+.form-check-input:checked {
+    background-color: #05828B;
+    border-color: #05828B;
+}
+.form-check-input[type=radio]:focus{
+    box-shadow: none;
+}
+.collapse-right{
+    margin-top: 21px;
+    margin-right: 23px;
+}
+.collapse-right a{
+    background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    box-shadow: 8px 8px 16px #05828B4A;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 11px;
+    padding: 8px 21px 9px;
+    font-weight: 500;
+}
+@media (min-width: 1305px) and (max-width: 1355px) {
+    .aquarium-box-2{
+        width: 37%;
+    }
+}
+@media (min-width: 1255px) and (max-width: 1305px) {
+    .aquarium-box-2{
+        width: 35%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .aqua-lg-img{
+        display: none;
+    }
+    .availability-collapse-sm{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .activities{
+        background: #fff;
+        padding-bottom: 100px;
+        margin-top: 74px;
+    }
+    .activities-left{
+        display: none;
+    }
+    .activities-right{
+        width: 100%;
+        padding: 0 28px;
+    }
+    .breadcrumb{
+        display: none;
+    }
+    .activities-right h3{
+        display: none;
+    }
+    .activities-right .btn-group button{
+        display: none;
+    }
+    .aquarium{
+        flex-direction: column;
+        box-shadow: 0px 3px 6px #00000029;
+        border: none;
+        border-radius: 0;
+        padding-bottom: 30px;
+        margin-bottom: 22px;
+    }
+    .aqua-sm-img{
+        display: none;
+    }
+    .aqua-lg-img{
+        width: 100%;
+    }
+    .aquarium-box-2{
+        width: 100%;
+    }
+    .aquarium-box-2 h4{
+        font-size: 16px;
+        margin: 16px 0 13px 16px;
+    }
+    .aquarium-box-2 h4 span{
+        display: block;
+    }
+    .aquarium-p{
+        margin-left: 16px;
+        color: #707070;
+        font-size: 12px;
+        margin-right: 14px;
+        padding-bottom: 25px;
+    }
+    .aquarium-offer{
+        display: none;
+    }
+    .check-availability{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 16px;
+    }
+    .check-availability h5{
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        padding-top: 2px;
+    }
+    .check-availability h6{
+        display: none;
+    }
+    .availability a{
+        background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+        border-radius: 18px;
+        font-weight: 700;
+        padding: 12px 24px;
+        margin: 0;
+        margin-right: 16px;
+    }
+    .aquarium .collapse{
+        border-top: 1px solid #D6D6D6;
+        padding: 0;
+        margin: 31px 16px 0 16px;
+        width: 90%;
+        padding-top: 30px;
+        padding-left: 5px;
+    }
+    .availability-collapse-bg{
+        display: none !important;
+    }
+    .nursery-experience{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .availability-collapse-sm p{
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+    }
+    .availability-collapse-sm a{
+        background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+        border-radius: 18px;
+        color: #fff;
+        font-size: 12px;
+        border: 1px solid #fff;
+        padding: 10px 12px;
+    }
+}
+
+
+/* Activities Checkout */
+.activities-checkout{
+    background-color: #FCFCFC;
+    padding-top: 198px;
+    padding-bottom: 92px;
+}
+.activities-checkout .container-fluid{
+    padding: 0 108px;
+}
+.activities-checkout .breadcrumb{
+    margin-bottom: 17px;
+}
+.activities-checkout ol li:nth-child(2){
+    font-weight: 500;
+}
+.activities-checkout .col-lg-8{
+    width: 62.8%;
+    padding-right: 10px;
+}
+.activities-checkout .col-lg-4{
+    width: 37.2%;
+    padding-left: 10px;
+}
+.checkout-bg{
+    background-color: #FFFFFF;
+    border: 1px solid #C1C1C1;
+    border-radius: 6px;
+}
+.checkout-h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2B2C2D;
+    margin-bottom: 0;
+    border-bottom: 1px solid #C1C1C1;
+    padding: 18px 22px;
+}
+
+/* Ultimate Experience */
+.ultimate-experience{
+    margin-bottom: 20px;
+    color: #333;
+}
+.ultimate-experience h4{
+    padding: 18px 19px 21px;
+}
+.ultimate-experience-inner{
+    margin: 23px 21px 35px 21px;
+    border: 1px solid #D6D6D6;
+    border-radius: 8px;
+}
+.ultimate-experience-inner h5{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 13px 0 17px 22px;
+}
+.from-to{
+    border-bottom: 1px solid #F3F3F3;
+    padding-bottom: 17px;
+    margin-bottom: -3px;
+}
+.from-left{
+    margin-right: 45px;
+}
+.from-to h6{
+    margin-bottom: 0;
+    font-size: 13px;
+    margin-left: 22px;
+}
+.from-to span{
+    font-size: 11px;
+    font-weight: 500;
+    margin-left: 22px;
+}
+.ultimate-experience-inner p{
+    font-size: 11px;
+    font-weight: 500;
+    margin: 13px 15px 0 22px;
+}
+
+/* Tour Description */
+.tour-description h4{
+    font-size: 19px;
+    padding: 19px 22px;
+}
+.tour-description p{
+    color: #A5A5A5;
+    font-size: 13px;
+    margin: 18px 64px 13px 22px;
+    font-weight: 500;
+}
+.tour-description a{
+    margin-right: 30px;
+    color: #05828B;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Traveller Details */
+.traveller-details{
+    margin-top: 20px;
+}
+.traveller-details h4{
+    padding: 22px 29px 24px;
+}
+.traveller-details form{
+    border-bottom: 1px solid #C1C1C1;
+    padding: 30px 52px 40px 26px;
+    margin: 0;
+}
+.traveller-details label{
+    font-size: 12px;
+    color: #2B2C2D;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.traveller-details .form-select, .traveller-details .form-control{
+    border: 1px solid #EEEEEE;
+}
+.traveller-details .form-control{
+    font-size: 12px;
+    padding: 10px 12px;
+}
+.traveller-details ::placeholder, .traveller-details .form-select{
+    font-size: 12px;
+    color: #B7B7B7;
+}
+.traveller-details .form-select{
+    padding: 11px 0 9px 12px;
+}
+.traveller-details .form-control:focus, .traveller-details .form-select:focus{
+    box-shadow: none;
+}
+.form-p17{
+    padding-right: 17px;
+}
+.form-p30{
+    padding-right: 30px;
+}
+.traveller-details .col-md-2{
+    width: 20%;
+}
+.traveller-details .col-md-5{
+    width: 40%;
+}
+.checkout-payment{
+    background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 40px;
+    padding: 22px 92px 22px 60px;
+    display: inline-block;
+    box-shadow: 8px 8px 16px #05828B4A;
+    border: 2px solid #fff;
+    border-top: 1px solid #fff;
+    margin: 50px 0;
+}
+.checkout-payment:hover{
+    color: #fff;
+}
+
+/* Ticket Summary */
+.ticket-summary-inner{
+    padding: 16px 22px;
+}
+.ticket-summary-inner p{
+    font-weight: 500;
+    color: #2B2C2D;
+    margin-bottom: 0;
+}
+.ticket-price span{
+    font-size: 12px;
+    color: #2B2C2D;
+}
+.total-discounts{
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+.total-discounts span{
+    font-size: 10px;
+    color: #06B747;
+    font-weight: 500;
+    margin-left: 17px;
+}
+.discount-green{
+    color: #06B747 !important;
+}
+.total-payable{
+    margin-bottom: 12px;
+}
+.total-payable p{
+    font-weight: 600;
+    font-size: 17px;
+}
+@media only screen and (min-width: 600px) {
+    .ultimate-experience-sm{
+        display: none;
+    }
+    .label-small{
+        display: none;
+    }
+    .h5-small{
+        display: none;
+    }
+    .cancellation-box span{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    /* Activities Checkout */
+    .activities-checkout{
+        background-color: #fff;
+        padding-top: 74px;
+        padding-bottom: 105px;
+    }
+    .activities-checkout .container-fluid{
+        padding: 0;
+    }
+    .activities-checkout .breadcrumb{
+        display: none;
+    }
+    .activities-checkout .col-lg-8{
+        width: 100%;
+        padding-right: 12px;
+    }
+    .activities-checkout .col-lg-4{
+        display: none;
+    }
+    .checkout-bg{
+        border: none;
+    }
+    .checkout-h4{
+        font-size: 14px;
+        font-weight: 500;
+        color: #333333;
+        border-bottom: none;
+        padding: 18px 22px;
+    }
+
+    /* Ultimate Experience */
+    .ultimate-experience{
+        margin-bottom: 0;
+    }
+    .ultimate-experience h4{
+        display: none;
+    }
+    .ultimate-experience-inner{
+        margin: 0;
+        border: none;
+        height: auto;
+        flex-direction: column;
+    }
+    .activities-checkout .ultimate-experience-img{
+        max-width: 100%;
+    }
+    .ultimate-experience-lg{
+        display: none;
+    }
+    .ultimate-experience-sm{
+        width: 100%;
+    }
+    .h5-big{
+        display: none;
+    }
+    .ultimate-experience-inner h5{
+        margin: 16px 0 20px 28px;
+    }
+    .h5-small span{
+        font-size: 14px;
+        font-weight: 400;
+        display: block;
+    }
+    .from-to{
+        border-bottom: none;
+        padding-bottom: 18px;
+        margin-bottom: 0px;
+    }
+    .from-left{
+        margin-right: 3px;
+    }
+    .from-to h6{
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 28px;
+    }
+    .from-to span{
+        font-weight: 400;
+        margin-left: 28px;
+    }
+    .cancellation{
+        display: none;
+    }
+    .cancellation-box span{
+        display: block;
+        color: #6ae793;
+        padding-bottom: 5px;
+        font-weight: 500;
+    }
+    .ultimate-experience-inner p{
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0 29px 34px 28px;
+        border: 1px solid #ccc;
+        padding: 10px 25px 10px 15px;
+
+    }
+    
+    /* Tour Description */
+    .tour-description{
+        border-top: 1px solid #E3E3E3;
+        border-radius: 0;
+        padding-top: 24px;
+    }
+    .tour-description h4{
+        font-size: 14px;
+        padding: 0;
+        padding-left: 28px;
+    }
+    .tour-description p{
+        color: #818181;
+        font-size: 12px;
+        margin: 18px 29px 12px 28px;
+        font-weight: 300;
+    }
+    .tour-description a{
+        margin-right: 29px;
+        font-size: 12px;
+    }
+
+    /* Traveller Details */
+    .traveller-details{
+        margin-top: -7px;
+        padding: 0 28px;
+        border-top: 1px solid #F3F3F3;
+        border-radius: 0;
+    }
+    .traveller-details h4{
+        padding: 0;
+        margin-top: 26px;
+        margin-bottom: 4px;
+    }
+    .traveller-details form{
+        border-bottom: 0;
+        padding: 0;
+    }
+    .form-email{
+        order: 2;
+    }
+    .form-phone{
+        order: 1;
+    }
+    .form-passport{
+        order: 3;
+    }
+    .form-pancard{
+        order: 4;
+    }
+    .traveller-details label{
+        font-size: 14px;
+        color: #414141;
+        margin-bottom: 10px;
+    }
+    .label-big{
+        display: none;
+    }
+    .traveller-details .form-select, .traveller-details .form-control{
+        border: 1px solid #ccc;
+    }
+    .traveller-details ::placeholder{
+        color: #fff;
+    }
+    .traveller-details .form-select{
+        font-size: 12px;
+        color: #B7B7B7;
+    }
+    .form-p17{
+        padding-right: 8px;
+    }
+    .form-p30{
+        padding-right: 8px;
+    }
+    .form-p4{
+        padding-top: 4px;
+    }
+    .traveller-details .col-md-2{
+        width: 100%;
+    }
+    .traveller-details .col-md-5{
+        width: 100%;
+    }
+    .checkout-payment{
+        display: none;
+    }
+}
+
+
+/* Footer */
+.footer{
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 13px;
+}
+@media only screen and (max-width: 600px) {
+    .footer{
+        display: none;
+    }
+}
+
+
+/* Search Top */
+.search-top{
+    background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+    padding: 15px 16px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.search-top-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.search-top-left .fa-arrow-left{
+    font-size: 17px;
+    color: #fff;
+    margin-top: 13px;
+}
+.search-top-right{
+    background: #65B59B 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    display: flex;
+    padding: 4px 24px 6px 19px;
+}
+.search-top-right p{
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+}
+.search-top-right ul{
+    padding: 0;
+}
+.search-top-right ul li{
+    float: left;
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+}
+.search-top-right ul li:first-child{
+    list-style: none;
+    margin-right: 15px;
+}
+.search-top-right .fa-search{
+    margin-left: 37px;
+    margin-top: 9px;
+    color: #fff;
+}
+@media only screen and (min-width: 600px) {
+    .search-top{
+        display: none;
+    }
+}
+
+
+/* Filters Bottom */
+.filters-bottom{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0px 0px 11px #00000029;
+    background: #fff;
+}
+.filters-bottom-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 28px 11px;
+}
+.filters-bottom-inner .fa-rupee-sign,
+.filters-bottom-inner .fa-star,
+.filters-bottom-inner .fa-sliders-h{
+    color: #BBBBBB;
+    font-size: 18px;
+}
+.filters-bottom-inner p{
+    font-size: 12px;
+    color: #333333;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+@media only screen and (min-width: 600px) {
+    .filters-bottom{
+        display: none;
+    }
+}
+
+
+/* Proceed To Pay */
+.proceed-to-pay{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0px 0px 11px #00000029;
+    background: #fff;
+}
+.proceed-pay{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 18px 10px 45px;
+}
+.proceed-pay p{
+    font-weight: 700;
+    color: #1A2FB8;
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+.proceed-pay a{
+    background: transparent linear-gradient(270deg, #67E2BA 0%, #078A93 100%) 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 13px 17px 12px;
+    display: inline-block;
+}
+@media only screen and (min-width: 600px) {
+    .proceed-to-pay{
+        display: none;
+    }
+}
+
+

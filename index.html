@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Trip Heist</title>
+</head>
+
+<body>
+    <!-- Home Header -->
+    <section class="home-header">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Home Header Left -->
+                <div class="col-lg-5 col-12 home-header-left">
+                    <div class="social-media">
+                        <div class="pos-f-t">
+                            <div class="collapse" id="navbarToggleExternalContent">
+                              <div class="bg-dark p-4">
+                                <h4 class="text-white">Collapsed content</h4>
+                                <span class="text-muted">Toggleable via the navbar brand.</span>
+                              </div>
+                            </div>
+                            <nav class="navbar navbar-dark bg-dark">
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                            </nav>
+                          </div>
+                        <div class="heist-logo">
+                            <a href="index.html"><img src="img/logo.png" alt="Tripheist Logo" title="Tripheist"></a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        </div>
+                        <div class="header-plane">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                    <h1>Find deals on<br>flights, hotels and much more</h1>
+                    <p>With over a million hotels and flights to choose from, find your reason to smile.</p>
+                </div>
+
+                <!-- Home Hedaer Right -->
+                <div class="col-lg-7 col-12 home-header-right text-center">
+                    <ul>
+                        <li class="register"><a href="#">Register</a></li>
+                        <li class="heist-login"><a href="#">Login</a></li>
+                        <li class="options-bar"><a href="#"><img src="img/icons/menu.png"></a></li>
+                    </ul>
+                    <h2>What are you looking for?</h2>
+                    <div class="services">
+                        <div class="flights">
+                            <a href="#">
+                                <img src="img/icons/plane.png">
+                                <p>Flights</p>
+                            </a>
+                        </div>
+                        <div class="hotels active">
+                            <a href="index.html">
+                                <img src="img/icons/hotel.png">
+                                <p>Hotels</p>
+                            </a>
+                        </div>
+                        <div class="cabs">
+                            <a href="#">
+                                <img src="img/icons/taxi.png">
+                                <p>Cabs</p>
+                            </a>
+                        </div>
+                        <div class="activities">
+                            <a href="activities.html">
+                                <img src="img/icons/bell.png">
+                                <p>Activities</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="location-city-small">
+                        <div class="location-small">
+                            <a href="#">Search by Location </a>
+                        </div>
+                        <div class="city-small">
+                            <a href="#">Search by City</a>
+                        </div>
+                    </div>
+                    <div class="location-city">
+                        <div class="location">
+                            <div>
+                                <img src="img/icons/form-location.png">
+                            </div>
+                            <div>
+                                <label for="location">Location</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select your location</option>
+                                    <option value="1">Faridabad</option>
+                                    <option value="2">Gurgaon</option>
+                                    <option value="3">Noida</option>
+                                    <option value="4">New Delhi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="city">
+                            <div>
+                                <img src="img/icons/city.png">
+                            </div>
+                            <div>
+                                <label for="city">City</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select your location</option>
+                                    <option value="1">Faridabad</option>
+                                    <option value="2">Gurgaon</option>
+                                    <option value="3">Noida</option>
+                                    <option value="4">New Delhi</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-in-out">
+                        <div>
+                            <img src="img/icons/date.png">
+                        </div>
+                        <div>
+                            <label for="check-in-out">Check In - Check Out</label>
+                            <div>
+                                <p>dd/mm/yyyy - dd/mm/yyyy</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="guest">
+                        <div>
+                            <img src="img/icons/people.png">
+                        </div>
+                        <div>
+                            <label for="guest">Guest</label>
+                            <div>
+                            <p>1 Adult - 0 Child</p>
+                        </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i>Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guides -->
+    <section class="guides">
+        <div class="container">
+            <div class="guides-main">
+                <div class="guides-info">
+                    <div>
+                        <img src="img/icons/guide.png"">
+                    </div>
+                    <div>
+                        <h5>1,000+ local guides</h5>
+                        <p>Morbi semper fames lobortis ac<br>hac penatibus</p>
+                    </div>
+                </div>
+                <div class=" guides-info">
+                        <div>
+                            <img src="img/icons/location.png">
+                        </div>
+                        <div>
+                            <h5>Handcrafted experiences</h5>
+                            <p>Morbi semper fames lobortis ac<br>hac penatibus</p>
+                        </div>
+                    </div>
+                    <div class="guides-info">
+                        <div>
+                            <img src="img/icons/chat.png">
+                        </div>
+                        <div>
+                            <h5>96% happy travelers</h5>
+                            <p>Morbi semper fames lobortis ac<br>hac penatibus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="destinations">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>Top Most Popular Destinations</h2>
+                    <div>
+                        <img src="img/icons/border-bottom.png" class="bdr-btm">
+                        <img src="img/icons/border-small.png" class="border-small">
+                    </div>
+                </div>
+            </div>
+            <!-- Content Area -->
+            <div class="row content-area">
+                <div class="col-lg-3 col-6 maldives">
+                    <img src="img/destinations-1.png" alt="Maldives">
+                    <h4>Maldives</h4>
+                    <p>2,346 accommodations</p>
+                </div>
+                <div class="col-lg-3 col-6 greece">
+                    <img src="img/destinations-2.png" alt="Greece">
+                    <h4>Greece</h4>
+                    <p>2,346 accommodations</p>
+                </div>
+                <div class="col-lg-3 col-6 dubai">
+                    <img src="img/destinations-3.png" alt="Dubai">
+                    <h4>Dubai</h4>
+                    <p>2,346 accommodations</p>
+                </div>
+                <div class="col-lg-3 col-6 singapore">
+                    <img src="img/destinations-4.png" alt="Singapore">
+                    <h4>Singapore</h4>
+                    <p>2,346 accommodations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="recommendations">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>Recommendations For You</h2>
+                    <div>
+                        <img src="img/icons/border-bottom.png" class="bdr-btm">
+                        <img src="img/icons/border-small.png" class="border-small">
+                    </div>
+                </div>
+            </div>
+            <!-- Content Area -->
+            <div class="row content-area">
+                <div class="col-lg-4 col-6">
+                    <div class="position-relative recommend-1">
+                        <img src="img/recommendations-1.png" alt="Los Angeles">
+                        <i class="far fa-heart"></i>
+                        <img src="img/icons/discount.png" class="discount-img">
+                    </div>
+                    <div class="los-angeles">
+                        <div class="reviews">
+                            <h5>Los Angeles, USA</h5>
+                            <p>10 Reviews</p>
+                        </div>
+                        <h4>Using our Lorem Ipsum</h4>
+                        <div class="discount">
+                            <h6><span class="point">9.4</span>Wonderful</h6>
+                            <div>
+                                <p>$ <span class="dollar">5,00,000</span></p>
+                                <h4><img src="img/icons/light-bolt.png">$ 4,50,000</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="position-relative recommend-2">
+                        <img src="img/recommendations-2.png" alt="Los Angeles">
+                        <i class="far fa-heart"></i>
+                        <img src="img/icons/discount.png" class="discount-img">
+                    </div>
+                    <div class="los-angeles">
+                        <div class="reviews">
+                            <h5>Los Angeles, USA</h5>
+                            <p>10 Reviews</p>
+                        </div>
+                        <h4>Using our Lorem Ipsum</h4>
+                        <div class="discount">
+                            <h6><span class="point">9.4</span>Wonderful</h6>
+                            <div>
+                                <p>$ <span class="dollar">5,00,000</span></p>
+                                <h4><img src="img/icons/light-bolt.png">$ 4,50,000</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="position-relative recommend-3">
+                        <img src="img/recommendations-3.png" alt="Los Angeles">
+                        <i class="far fa-heart"></i>
+                        <img src="img/icons/discount.png" class="discount-img">
+                    </div>
+                    <div class="los-angeles">
+                        <div class="reviews">
+                            <h5>Los Angeles, USA</h5>
+                            <p>10 Reviews</p>
+                        </div>
+                        <h4>Using our Lorem Ipsum</h4>
+                        <div class="discount">
+                            <h6><span class="point">9.4</span>Wonderful</h6>
+                            <div>
+                                <p>$ <span class="dollar">5,00,000</span></p>
+                                <h4><img src="img/icons/light-bolt.png">$ 4,50,000</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences -->
+    <section class="experiences">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>Local Experiences You'll Love</h2>
+                    <div>
+                        <img src="img/icons/border-bottom.png" class="bdr-btm">
+                        <img src="img/icons/border-small.png" class="border-small">
+                    </div>
+                </div>
+            </div>
+            <!-- Content Area -->
+            <div class="row">
+                <div class="col-lg-6 places-left">
+                    <div class="agra">
+                        <img src="img/place-1.png">
+                        <div class="centered">Agra</div>
+                        <div class="bottom-right">
+                            <span>Average Price</span>
+                            <h5><img src="img/icons/light-bolt.png">$ 4,50,000</h5>
+                        </div>
+                    </div>
+                    <div class="rishikesh">
+                        <img src="img/place-2.png">
+                        <div class="centered">Rishikesh</div>
+                        <div class="bottom-right">
+                            <span>Average Price</span>
+                            <h5><img src="img/icons/light-bolt.png">$ 4,50,000</h5>
+                        </div>
+                    </div>
+                    <div class="nanital">
+                        <img src="img/place-3.png">
+                        <div class="centered">Nanital</div>
+                        <div class="bottom-right">
+                            <span>Average Price</span>
+                            <h5><img src="img/icons/light-bolt.png">$ 4,50,000</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 places-right">
+                    <div class="delhi">
+                        <img src="img/place-4.png">
+                        <div class="centered">New Delhi</div>
+                        <div class="bottom-right">
+                            <span>Average Price</span>
+                            <h5><img src="img/icons/light-bolt.png">$ 4,50,000</h5>
+                        </div>
+                    </div>
+                    <div class="mumbai">
+                        <img src="img/place-5.png">
+                        <div class="centered">Mumbai</div>
+                        <div class="bottom-right">
+                            <span>Average Price</span>
+                            <h5><img src="img/icons/light-bolt.png">$ 4,50,000</h5>
+                        </div>
+                    </div>
+                    <div class="jaipur">
+                        <img src="img/place-6.png">
+                        <div class="centered">Jaipur</div>
+                        <div class="bottom-right">
+                            <span>Average Price</span>
+                            <h5><img src="img/icons/light-bolt.png">$ 4,50,000</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Heist Button -->
+            <div class="row">
+                <div class="heist-button">
+                    <button class="btn btn-info" type="submit">Explore More Places <img
+                            src="img/icons/arrow.png"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="visit">
+        <div class="container">
+            <div class="row">
+                <img src="img/visit.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- Getaways -->
+    <section class="getaways">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>Top Getaways</h2>
+                    <div>
+                        <img src="img/icons/border-bottom.png" class="bdr-btm">
+                        <img src="img/icons/border-small.png" class="border-small">
+                    </div>
+                </div>
+            </div>
+            <!-- Select Categories -->
+            <div class="row">
+                <div class="select-categories">
+                    <ul>
+                        <li class="beaches"><a href="#" class="active">Beaches</a></li>
+                        <li class="deserts"><a href="#">Deserts</a></li>
+                        <li class="hills"><a href="#">Hill Stations</a></li>
+                        <li class="monuments"><a href="#">Historic Monuments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Content Area -->
+            <div class="row top-getaways">
+                <div class="col-lg-3 col-6 australia">
+                    <img src="img/getaways-1.png">
+                    <h4>Australia</h4>
+                </div>
+                <div class="col-lg-3 col-6 malibu">
+                    <img src="img/getaways-2.png">
+                    <h4>Malibu</h4>
+                </div>
+                <div class="col-lg-3 col-6 africa">
+                    <img src="img/getaways-3.png">
+                    <h4>Africa</h4>
+                </div>
+                <div class="col-lg-3 col-6 thailand">
+                    <img src="img/getaways-4.png">
+                    <h4>Thailand</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>Popular Blog Posts</h2>
+                    <div>
+                        <img src="img/icons/border-bottom.png" class="bdr-btm">
+                        <img src="img/icons/border-small.png" class="border-small">
+                    </div>
+                </div>
+            </div>
+            <!-- Content Area -->
+            <div class="row blog-content">
+                <div class="col-lg-4">
+                    <img src="img/blog-1.png" alt=" Blog Post">
+                    <h5>Using our Lorem Ipsum</h5>
+                    <p>Using our Lorem Ipsum generator, you can easily select a variation...</p>
+                    <div class="arrow-area">
+                        <div>
+                            <h6>By Ayushi Arora</h6>
+                            <p>15 march, 2021</p>
+                        </div>
+                        <span><img src="img/icons/arrow-1.png"></span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/blog-2.png" alt=" Blog Post">
+                    <h5>Using our Lorem Ipsum</h5>
+                    <p>Using our Lorem Ipsum generator, you can easily select a variation...</p>
+                    <div class="arrow-area">
+                        <div>
+                            <h6>By Ayushi Arora</h6>
+                            <p>15 march, 2021</p>
+                        </div>
+                        <span><img src="img/icons/arrow-1.png"></span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/blog-1.png" alt=" Blog Post">
+                    <h5>Using our Lorem Ipsum</h5>
+                    <p>Using our Lorem Ipsum generator, you can easily select a variation...</p>
+                    <div class="arrow-area">
+                        <div>
+                            <h6>By Ayushi Arora</h6>
+                            <p>15 march, 2021</p>
+                        </div>
+                        <span><img src="img/icons/arrow-1.png"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Heist Button -->
+            <div class="row">
+                <div class="heist-button">
+                    <button class="btn btn-info" type="submit">All Blog Posts <img src="img/icons/arrow.png"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals -->
+    <section class="deals">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex newsletter justify-content-center">
+                    <div>
+                        <img src="img/icons/newsletter.png">
+                    </div>
+                    <div>
+                        <h5>Get the latest hot deals!</h5>
+                        <span>Subscribe to Newsletter</span>
+                    </div>
+                    <form class="d-flex">
+                        <input class="form-control" type="email" placeholder="Enter your email address">
+                        <button class="btn btn-danger" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countries -->
+    <section class="countries">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>Explore Countries</h2>
+                    <div>
+                        <img src="img/icons/border-bottom.png" class="bdr-btm">
+                        <img src="img/icons/border-small.png" class="border-small">
+                    </div>
+                </div>
+            </div>
+            <!-- Content Area -->
+            <div class="row content-area">
+                <div class="col-lg-3 col-6 maldives padd-left">
+                    <img src="img/destinations-1.png" alt="Maldives">
+                    <h4>Maldives</h4>
+                    <span>Rediscover culture and Places that unite as a nation</span>
+                </div>
+                <div class="col-lg-3 col-6 greece padd-right">
+                    <img src="img/destinations-2.png" alt="Greece">
+                    <h4>Greece</h4>
+                    <span>Rediscover culture and Places that unite as a nation</span>
+                </div>
+                <div class="col-lg-3 col-6 dubai">
+                    <img src="img/destinations-3.png" alt="Dubai">
+                    <h4>Dubai</h4>
+                    <span>Rediscover culture and Places that unite as a nation</span>
+                </div>
+                <div class="col-lg-3 col-6 singapore">
+                    <img src="img/destinations-4.png" alt="Singapore">
+                    <h4>Singapore</h4>
+                    <span>Rediscover culture and Places that unite as a nation</span>
+                </div>
+            </div>
+            <!-- Heist Button -->
+            <div class="row">
+                <div class="heist-button">
+                    <button class="btn btn-info" type="submit">Explore all countries <img
+                            src="img/icons/arrow.png"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer Info -->
+        <section class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul>
+                            <h6>Important Links</h6>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Create an account</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul>
+                            <h6>About the site</h6>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Become An Affiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-contact">
+                        <ul>
+                            <h6>Contact</h6>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Create an account</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 get-in-touch">
+                        <ul>
+                            <h6>Get In Touch</h6>
+                            <li class="support-heist">
+                                <div><img src="img/icons/email.png"></div>
+                                <div>support@tripheist.com</div>
+                            </li>
+                            <li class="briefcase">
+                                <div><img src="img/icons/briefcase.png"></div>
+                                <div>SCO 136, First Floor, Mansa Devi Complex Sector 5, Panchkula, 134114</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Main -->
+        <section class="footer-main text-center">
+            <div class="container">
+                <div class="row">
+                    <span>Copyright © 2020 TripHeist</span>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <!-- Required JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
